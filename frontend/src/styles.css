@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: #f5f5f8;
+  color: #20212a;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+}
+
+.dark {
+  background: #090a0f;
+  color: #e9eaf0;
+}
+
+.sidebar {
+  width: 260px;
+  flex: 0 0 260px;
+  border-right: 1px solid #dedfe5;
+  background: #fafafd;
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .sidebar {
+  background: #0d0e14;
+  border-color: #20212a;
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 4px 8px 25px;
+}
+
+.brandmark, .hero {
+  background: #6e59dd;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  width: 36px;
+  height: 36px;
+}
+
+.brand b, .brand small, .status b, .status small {
+  display: block;
+}
+
+.brand b {
+  font-family: "Space Grotesk";
+}
+
+.brand small, .status small {
+  color: #888;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.new, .ghost, .primary {
+  border-radius: 9px;
+  padding: 10px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.new {
+  justify-content: center;
+  background: white;
+  border: 1px solid #ddd;
+  color: #222;
+}
+
+.dark .new {
+  background: #15161e;
+  color: white;
+  border-color: #292a35;
+}
+
+.label, .eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #8b8d98;
+}
+
+.label {
+  display: block;
+}
+
+.sidebar > .label {
+  margin: 27px 8px 9px;
+}
+
+/* Sidebar workspace buttons */
+.sidebar .workspace {
+  border: 0;
+  background: transparent;
+  color: #777;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  text-align: left;
+  font-size: 12px;
+  width: 100%;
+}
+
+.sidebar .workspace span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar .workspace.active, .sidebar .workspace:hover {
+  background: #ece9fb;
+  color: #5f4ac2;
+}
+
+.dark .sidebar .workspace.active, .dark .sidebar .workspace:hover {
+  background: #1c192d;
+  color: #bcb0ff;
+}
+
+.sidebottom {
+  margin-top: auto;
+}
+
+.status {
+  border: 1px solid #dedfe5;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dark .status {
+  border-color: #252630;
+}
+
+.status i {
+  width: 8px;
+  height: 8px;
+  background: #35b77c;
+  border-radius: 50%;
+}
+
+.status b {
+  font-size: 11px;
+}
+
+.theme {
+  border: 0;
+  background: transparent;
+  color: #777;
+  padding: 10px 5px;
+  font-size: 11px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+header {
+  height: 92px;
+  border-bottom: 1px solid #dedfe5;
+  padding: 22px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark header {
+  border-color: #20212a;
+}
+
+header h1 {
+  font: 600 24px "Space Grotesk";
+  margin: 5px 0;
+  letter-spacing: -.04em;
+}
+
+.eyebrow {
+  color: #745fd4;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.words {
+  color: #888;
+  font-size: 11px;
+  display: flex;
+  gap: 6px;
+}
+
+.error {
+  margin: 18px 42px;
+  padding: 11px;
+  border-radius: 9px;
+  background: #d94c4c15;
+  color: #bd4141;
+  font-size: 12px;
+}
+
+.create {
+  max-width: 850px;
+  margin: auto;
+  padding: 65px 40px;
+  text-align: center;
+}
+
+.hero {
+  margin: 0 auto 20px;
+  width: 57px;
+  height: 57px;
+  border-radius: 17px;
+}
+
+.create h2 {
+  font: 600 clamp(37px, 5vw, 57px) "Space Grotesk";
+  line-height: 1.04;
+  letter-spacing: -.055em;
+  margin: 10px 0 17px;
+}
+
+.create h2 span {
+  color: #745fd4;
+}
+
+.create > p {
+  max-width: 620px;
+  margin: auto;
+  color: #858791;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.createcard {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 14px;
+  padding: 10px;
+  text-align: left;
+}
+
+.dark .createcard {
+  background: #101118;
+  border-color: #252630;
+}
+
+.createcard input, .createcard textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  padding: 13px;
+}
+
+.createcard input {
+  font: 600 14px "Space Grotesk";
+  border-bottom: 1px solid #e5e5e8;
+}
+
+.dark .createcard input {
+  border-color: #292a35;
+}
+
+.createcard textarea {
+  height: 180px;
+  resize: vertical;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.createcard footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.ghost {
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #777;
+}
+
+.primary {
+  background: #6e59dd;
+  color: #fff;
+  border: 1px solid #6e59dd;
+}
+
+/* Main workspace view container */
+section.workspace {
+  padding: 32px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.source, .results article, .chat, .cardgrid article {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.dark .source, .dark .results article, .dark .chat, .dark .cardgrid article {
+  background: #101118;
+  border-color: #252630;
+}
+
+.source {
+  padding: 20px 22px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading h3 {
+  font: 600 17px "Space Grotesk";
+  margin: 6px 0;
+}
+
+.heading button {
+  border: 0;
+  background: transparent;
+  color: #888;
+}
+
+.source > p {
+  font-size: 12px;
+  line-height: 1.75;
+  color: #747782;
+  max-height: 175px;
+  overflow: auto;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.actions button {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 11px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+  color: inherit;
+}
+
+.dark .actions button {
+  background: #101118;
+  border-color: #252630;
+}
+
+.actions button:hover {
+  border-color: #806be6;
+}
+
+.actionicon {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: #765fe918;
+  color: #765fe9;
+  display: grid;
+  place-items: center;
+}
+
+.actions div {
+  flex: 1;
+}
+
+.actions b, .actions small {
+  display: block;
+}
+
+.actions b {
+  font-size: 11px;
+}
+
+.actions small {
+  color: #888;
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark nav {
+  border-color: #252630;
+}
+
+nav button {
+  border: 0;
+  background: transparent;
+  color: #888;
+  padding: 0 0 10px;
+  font-size: 11px;
+  position: relative;
+}
+
+nav .selected {
+  color: #7059dd;
+  font-weight: 700;
+}
+
+nav .selected:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: #7059dd;
+}
+
+.generating {
+  padding: 9px;
+  background: #7059dd12;
+  color: #7059dd;
+  border-radius: 8px;
+  font-size: 11px;
+  display: flex;
+  gap: 7px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 16px;
+}
+
+.results article {
+  padding: 20px;
+  min-height: 170px;
+}
+
+.results .wide {
+  grid-column: span 2;
+}
+
+.summary {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #777b86;
+}
+
+.empty {
+  color: #8b8d97;
+  font-size: 11px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  min-height: 90px;
+}
+
+.concepts {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 17px;
+}
+
+.concepts span {
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #efecfb;
+  color: #634ec5;
+  font-size: 10px;
+}
+
+.dark .concepts span {
+  background: #211c36;
+  color: #b9aef8;
+}
+
+.pipeline {
+  margin-top: 15px;
+}
+
+.pipeline p {
+  font-size: 11px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.pipeline b {
+  color: #7059dd;
+  margin-right: 8px;
+}
+
+.cards h2 {
+  font: 600 19px "Space Grotesk";
+  margin: 5px 0 17px;
+}
+
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cardgrid article {
+  padding: 20px;
+  min-height: 180px;
+}
+
+.cardgrid article > small {
+  color: #7059dd;
+  font-weight: 700;
+}
+
+.cardgrid h3 {
+  font: 600 14px "Space Grotesk";
+  line-height: 1.5;
+}
+
+.answer {
+  border-top: 1px solid #e4e4e8;
+  padding-top: 10px;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dark .answer {
+  border-color: #252630;
+}
+
+.answer b {
+  display: block;
+  font-size: 9px;
+  letter-spacing: .1em;
+  margin-bottom: 4px;
+}
+
+.chat {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chathead {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 13px;
+}
+
+.dark .chathead {
+  border-color: #252630;
+}
+
+.chathead b, .chathead small {
+  display: block;
+}
+
+.chathead b {
+  font-size: 12px;
+}
+
+.chathead small {
+  font-size: 9px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.history {
+  min-height: 250px;
+  padding: 17px 3px;
+  display: grid;
+  gap: 13px;
+}
+
+.q {
+  margin-left: auto;
+  max-width: 75%;
+  background: #eeeafd;
+  color: #604bc3;
+  padding: 9px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+.dark .q {
+  background: #211c36;
+  color: #b9aef8;
+}
+
+.a {
+  max-width: 80%;
+  margin-top: 6px;
+  background: #f1f2f5;
+  color: #696c76;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dark .a {
+  background: #1a1b23;
+  color: #adb0bb;
+}
+
+.chatinput {
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+  display: flex;
+  gap: 7px;
+}
+
+.dark .chatinput {
+  border-color: #252630;
+}
+
+.chatinput input {
+  flex: 1;
+  border: 1px solid #ddd;
+  background: transparent;
+  color: inherit;
+  border-radius: 8px;
+  padding: 10px;
+  outline: 0;
+  font-size: 11px;
+}
+
+.dark .chatinput input {
+  border-color: #252630;
+}
+
+@media(max-width: 900px) {
+  .sidebar {
+    width: 220px;
+    flex-basis: 220px;
+  }
+  .actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+  header, section.workspace {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .error {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .actions, .results, .cardgrid {
+    grid-template-columns: 1fr;
+  }
+  .results .wide {
+    grid-column: auto;
+  }
+  .create {
+    padding: 45px 20px;
+  }
+}

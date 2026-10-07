@@ -1,0 +1,275 @@
+[
+  {
+    "id": "ef0643bf-a31c-4be1-b415-258322492ea4",
+    "title": "Why Substack",
+    "sourceText": "Substack represents a transformative shift in media by replacing ad-driven, algorithmic gatekeeping with a direct subscription model that empowers independent creators. I want to build at Substack because its mission directly aligns with my belief in digital ownership and economic autonomy, allowing engineers to build high-impact growth and discovery systems that connect readers with culture they truly love.",
+    "createdAt": "2026-10-07T20:07:00.230Z",
+    "updatedAt": "2026-10-07T20:07:23.953Z",
+    "results": {
+      "summary": "Substack represents a transformative shift in media by replacing ad-driven, algorithmic gatekeeping with a direct subscription model that empowers independent creators.",
+      "concepts": [
+        "substack",
+        "build",
+        "transformative",
+        "subscription",
+        "algorithmic",
+        "gatekeeping",
+        "independent",
+        "high-impact",
+        "represents",
+        "replacing",
+        "ad-driven",
+        "ownership"
+      ],
+      "flashcards": [
+        {
+          "question": "Substack represents a transformative shift in media by replacing ad?",
+          "answer": "driven, algorithmic gatekeeping with a direct subscription model that empowers independent creators."
+        }
+      ],
+      "practiceQuestions": []
+    }
+  },
+  {
+    "id": "61faa570-1cce-4bff-b428-d2c264ee70a4",
+    "title": "Machine Learning Overfitting & Regularization",
+    "sourceText": "Training complex machine learning models on limited datasets frequently introduces the risk of overfitting, where a model memorizes the training data's noise and specific quirks rather than learning generalized patterns. As a result, an overfitted model achieves near-perfect accuracy on training data but performs poorly on unseen test or validation data due to high variance. To combat this, data scientists employ regularization techniques such as L1 (Lasso) and L2 (Ridge) regularization, which add a penalty proportional to the magnitude of the model's coefficients to discourage overly complex decision boundaries. Additionally, dropout layers in neural networks randomly deactivate a percentage of neurons during training to prevent co-adaptation, while early stopping halts the optimization process as soon as validation loss begins to increase, ensuring optimal model generalization.",
+    "createdAt": "2026-10-07T19:28:05.555Z",
+    "updatedAt": "2026-10-07T20:07:36.474Z",
+    "results": {
+      "summary": "Data scientists use regularization techniques such as L1 (Lasso) and L2 (Ridge) regularization, which add a penalty proportional to the model's coefficients to discourage overly complex decision boundaries.",
+      "concepts": [
+        "training",
+        "model",
+        "data",
+        "regularization",
+        "validation",
+        "learning",
+        "complex",
+        "generalization",
+        "co-adaptation",
+        "near-perfect",
+        "proportional",
+        "coefficients"
+      ],
+      "flashcards": [],
+      "practiceQuestions": []
+    }
+  },
+  {
+    "id": "7d0c4c5f-80a7-46c0-a9cf-9d22eb347950",
+    "title": "Cryptography & Public-Key Infrastructure (PKI)",
+    "sourceText": "Modern digital security relies heavily on cryptography, distinguishing primarily between symmetric and asymmetric encryption schemes. Symmetric encryption, such as AES, uses a single shared secret key for both encryption and decryption, offering high performance but requiring secure key exchange channels. Conversely, asymmetric encryption utilizes a mathematical key pair: a public key to encrypt data and a private key to decrypt it. Public-Key Infrastructure (PKI) manages these keys through digital certificates and trusted Certificate Authorities (CAs), ensuring authenticity and non-repudiation in web communications via protocols like TLS. Furthermore, cryptographic hash functions like SHA-256 provide data integrity by generating a fixed-size, irreversible digital fingerprint of any input message, ensuring that even a single-bit alteration drastically changes the resulting hash.",
+    "createdAt": "2026-10-07T19:24:40.336Z",
+    "updatedAt": "2026-10-07T20:07:42.304Z",
+    "results": {
+      "summary": "Asymmetric encryption uses a single shared secret key for both encryption and decryption, offering high performance but requiring secure key exchange channels.",
+      "concepts": [
+        "encryption",
+        "digital",
+        "asymmetric",
+        "symmetric",
+        "ensuring",
+        "data",
+        "like",
+        "hash",
+        "non-repudiation",
+        "distinguishing",
+        "infrastructure",
+        "communications"
+      ],
+      "flashcards": [],
+      "practiceQuestions": [],
+      "chats": [
+        {
+          "question": "Hello",
+          "answer": "Hello."
+        },
+        {
+          "question": "Tell me abbobut this topic",
+          "answer": "Asymmetric encryption utilizes a mathematical key pair: a public key to encrypt data and a private key to decrypt it."
+        },
+        {
+          "question": "what the mean",
+          "answer": "SHA-256"
+        }
+      ]
+    }
+  },
+  {
+    "id": "d382f0dc-41da-4597-a10b-a3ab5cefe24d",
+    "title": "Database Indexing & Query Optimization",
+    "sourceText": "Efficient data retrieval in relational database management systems relies heavily on proper indexing and query optimization strategies. Without an index, a database engine must perform a sequential full-table scan, inspecting every single row to satisfy a query, which results in linear O(n) time complexity as table size grows. In contrast, B-tree indexes organize data in a self-balancing tree structure, enabling logarithmic O(log n) search, insertion, and deletion times. Database query optimizers analyze incoming SQL statements and evaluate multiple execution plans based on statistics like table cardinality and cost estimation before selecting the most efficient path. Furthermore, proper normalization minimizes data redundancy, while strategic denormalization or materialized views can be employed in read-heavy applications to accelerate complex analytical joins.",
+    "createdAt": "2026-10-07T19:20:49.407Z",
+    "updatedAt": "2026-10-07T20:07:39.979Z",
+    "results": {
+      "summary": "Data retrieval in relational database management systems relies heavily on proper indexing and query optimization strategies. Without an index, a database engine must perform a sequential full-table scan, inspecting every single row to satisfy a query, which results in linear O(n) time complexity as table size grows. In contrast, B-tree indexes organize data in a self-balancing tree structure, enabling logarithmic O(log n) search, insertion, and deletion times.",
+      "concepts": [
+        "database",
+        "query",
+        "data",
+        "efficient",
+        "proper",
+        "table",
+        "denormalization",
+        "self-balancing",
+        "normalization",
+        "optimization",
+        "materialized",
+        "applications"
+      ],
+      "flashcards": [
+        {
+          "question": "Efficient data retrieval in relational database management systems relies heavily on proper indexing and query optimization strategies. without an index, a database engine must perform a sequential full?",
+          "answer": "table scan, inspecting every single row to satisfy a query, which results in linear O(n) time complexity as table size grows."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dd25e024-ebed-4d06-95f5-ffe4003e8579",
+    "title": "Cloud Computing & Microservices Architecture",
+    "sourceText": "Microservices architecture structures an application as a collection of loosely coupled services, which improve maintainability and scalability compared to monolithic applications. Each service communicates over lightweight protocols like HTTP/REST or asynchronous message brokers such as Apache Kafka and RabbitMQ. Containerization tools like Docker package each microservice with its dependencies, ensuring consistent execution across development, testing, and production environments. Furthermore, container orchestration platforms like Kubernetes automate the deployment, scaling, and load balancing of these services across distributed cluster nodes. While microservices offer high availability and independent deployability, they introduce significant complexity in distributed tracing, data consistency, and network latency management.",
+    "createdAt": "2026-10-07T19:03:36.458Z",
+    "updatedAt": "2026-10-07T20:07:44.780Z",
+    "results": {
+      "summary": "Microservices are a collection of loosely coupled services that improve maintainability and scalability compared to monolithic applications.",
+      "chats": [
+        {
+          "question": "Hello",
+          "answer": "Apache Kafka"
+        },
+        {
+          "question": "Yo",
+          "answer": "Yo"
+        },
+        {
+          "question": "Hi",
+          "answer": "Apache Kafka and RabbitMQ"
+        },
+        {
+          "question": "What ar you satying",
+          "answer": "satying"
+        },
+        {
+          "question": "?fd",
+          "answer": "?fd"
+        },
+        {
+          "question": "dont copy me",
+          "answer": "nodes"
+        },
+        {
+          "question": "summuraize this",
+          "answer": "Microservices architecture"
+        }
+      ],
+      "flashcards": []
+    }
+  },
+  {
+    "id": "302dc7c5-39fd-46bf-ae85-ec0f8887ab2e",
+    "title": "Video Game AI & Procedural Generation Design",
+    "sourceText": "Modern video game development relies heavily on advanced artificial intelligence and procedural content generation to create immersive, dynamic player experiences. Rather than hardcoding every enemy movement or level layout, developers utilize behavior trees and finite state machines to govern non-player character (NPC) decision-making, allowing enemies to patrol, investigate, and engage in combat adaptively based on line-of-sight and sound telemetry. Simultaneously, procedural generation algorithms—such as Perlin noise maps and wave function collapse—dynamically construct vast dungeon layouts, terrain features, and item placements on the fly, ensuring high replayability and varied gameplay loops. Furthermore, performance optimization techniques like occlusion culling and level-of-detail (LOD) management ensure that complex virtual environments maintain a stable frame rate across diverse hardware platforms without sacrificing visual fidelity.",
+    "createdAt": "2026-10-07T18:58:15.985Z",
+    "updatedAt": "2026-10-07T20:07:46.568Z",
+    "results": {
+      "summary": "Artificial intelligence and procedural content generation create immersive, dynamic player experiences.",
+      "concepts": [
+        "procedural",
+        "generation",
+        "decision-making",
+        "level-of-detail",
+        "simultaneously",
+        "line-of-sight",
+        "replayability",
+        "intelligence",
+        "optimization",
+        "environments",
+        "development",
+        "experiences"
+      ],
+      "flashcards": [],
+      "practiceQuestions": []
+    }
+  },
+  {
+    "id": "6e8ecb8c-abd6-43d6-87da-35011e6f186b",
+    "title": "Renewable Energy Transition & Grid Integration",
+    "sourceText": "Integrating renewable energy sources like wind and solar into modern electrical grids presents unique technical challenges due to their inherent intermittency and weather dependency. Unlike traditional fossil fuel or nuclear power plants that provide steady, dispatchable baseload power, photovoltaic and wind generation fluctuate continuously based on atmospheric conditions. To maintain grid stability and prevent blackouts, grid operators increasingly rely on advanced battery energy storage systems (BESS) and smart grid technologies. Smart grids utilize real-time telemetry, automated demand response programs, and predictive machine learning models to forecast power generation spikes and valleys. Furthermore, decentralized microgrids allow local communities to generate, store, and consume their own clean energy independently, reducing transmission losses and improving overall system resilience.",
+    "createdAt": "2026-10-07T18:51:31.113Z",
+    "updatedAt": "2026-10-07T20:07:49.413Z",
+    "results": {
+      "summary": "Using renewable energy sources like wind and solar into modern electrical grids presents unique technical challenges due to their inherent intermittency and weather dependency.",
+      "concepts": [
+        "energy",
+        "power",
+        "grid",
+        "generation",
+        "grids",
+        "smart",
+        "wind",
+        "intermittency",
+        "decentralized",
+        "independently",
+        "dispatchable",
+        "photovoltaic"
+      ],
+      "flashcards": [
+        {
+          "question": "Smart grids utilize real?",
+          "answer": "time telemetry, automated demand response programs, and predictive machine learning models to forecast power generation spikes and valleys."
+        }
+      ],
+      "practiceQuestions": []
+    }
+  },
+  {
+    "id": "03d7d7b0-59e4-4379-b389-54d2f806f827",
+    "title": "Untitled Research",
+    "sourceText": "Machine learning is a field of artificial intelligence that enables computer systems to learn patterns from data instead of relying entirely on explicitly programmed rules. Supervised learning uses labeled examples to learn a mapping between inputs and outputs. Classification predicts discrete categories, while regression predicts continuous values. Unsupervised learning works with data that does not have target labels. Clustering groups similar observations, while dimensionality reduction represents data with fewer features. Reinforcement learning is based on an agent interacting with an environment, receiving rewards or penalties, and learning a policy that improves long-term reward. Neural networks contain interconnected neurons arranged in layers. During training, a loss function measures prediction error and optimization adjusts parameters to reduce that loss.",
+    "createdAt": "2026-10-07T17:40:26.913Z",
+    "updatedAt": "2026-10-07T20:07:51.511Z",
+    "results": {
+      "summary": "Machine learning is a field of artificial intelligence that enables computer systems to learn patterns from data instead of relying entirely on explicitly programmed rules.",
+      "concepts": [
+        "learning",
+        "data",
+        "predicts",
+        "learn",
+        "loss",
+        "classification",
+        "dimensionality",
+        "interconnected",
+        "reinforcement",
+        "intelligence",
+        "unsupervised",
+        "observations"
+      ],
+      "flashcards": [],
+      "practiceQuestions": [],
+      "chats": [
+        {
+          "question": "Hi",
+          "answer": "Is there anything else I can do?"
+        },
+        {
+          "question": "Summarize the source material",
+          "answer": "Machine learning is a field of artificial intelligence that enables computer systems to learn patterns from data instead of relying entirely on explicitly programmed rules"
+        },
+        {
+          "question": "ty",
+          "answer": "is a field of artificial intelligence"
+        },
+        {
+          "question": "thank you",
+          "answer": "During training, a loss function measures prediction error and optimization adjusts parameters to reduce that loss."
+        },
+        {
+          "question": "yo stop",
+          "answer": "dimensionality reduction represents data with fewer features."
+        }
+      ]
+    }
+  }
+]
